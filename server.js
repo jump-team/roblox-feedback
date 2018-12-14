@@ -25,6 +25,9 @@ let Feedback = mongoose.model('Feedback', feedbackSchema);
 db.once('open', function() {
   app.use(bodyParser.json());
   // http://expressjs.com/en/starter/basic-routing.html
+  app.get('/', function(request, response) {
+    res.send("Docs at https://glitch.com/~roblox-feedback");
+  });
   app.get('/feedback', function(request, response) {
     Feedback.find(function(error, feedback) {
       response.send(feedback);

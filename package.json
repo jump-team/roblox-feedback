@@ -11,8 +11,9 @@
   },
   "dependencies": {
     "express": "^4.16.4",
-    "mongoose": "^5.3.16",
-    "body-parser": "^1.18.3"
+    "mongoose": "^5.4.0",
+    "body-parser": "^1.18.3",
+    "express-bearer-token": "^2.2.0"
   },
   "engines": {
     "node": "8.x"
